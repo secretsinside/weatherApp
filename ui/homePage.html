@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/home.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/home.css">
+		<title>WeatherApp</title>
+	</head>
+	<body>
+		<div class="center">
+			<!--what to do for a single input field, i dnt wnat to use forms-->
+			<form id="city">
+					<input type="text" onkeydown="triggerButton(event)" name="City" placeholder="City">
+			</form>
+		
+			<button id="submitCity" onclick="fetchData()">GO</button><br><br>
+			<div id="weatherCard">
+				<p id="returnTemp"></p>
+				<p id="returnCity"></p>
+			</div>
+		</div>
+	</body>
+</html>

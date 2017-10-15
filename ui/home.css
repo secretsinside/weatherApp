@@ -1,0 +1,41 @@
+body {
+	background-image: url("/moonlightSnow.jpg");
+
+	/*for stretcing(covering) the image*/
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.center {
+
+	margin-top: 3.125em;
+	text-align: center;
+}
+input[type=text] {
+	height: 1.875em;
+
+	background :rgba(255,255,255,0.6);	/*1st three values are of rgb (0-255), the 4th is of opacity*/
+	border: none;
+	border-bottom: 0.125em solid black;
+}
+#weatherCard {
+	display:none;	/*I'm hiding this div until user enters city name*/
+
+	background: rgba(255,255,255,0.4);	/*making the background translucent*/
+	margin-top: 12.5em;
+	margin-left: auto;
+	margin-right: auto;
+	height :31.25em;
+	width: 31.25em;
+	border :0.0625em solid black;
+}
+#returnCity {
+	font-size: 20px;
+	font-family: "sans-serif";
+}
+#returnTemp {
+	margin-top: 200px;
+	margin-bottom: 0;
+	font-size: 70px;
+}
