@@ -1,22 +1,48 @@
 <html>
 	<head>
 		<script type="text/javascript" src="/home.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="/home.css">
 		<title>WeatherApp</title>
+
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Ceviche One' rel='stylesheet'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- google font-->
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
 	</head>
 	<body>
-		<div class="center">
-			<!--what to do for a single input field, i dnt wnat to use forms-->
-			<form id="city">
-					<input type="text" onkeydown="triggerButton(event)" name="City" placeholder="City">
-			</form>
+
+	<div class="container-fluid">
+  		<div class="jumbotron">
+    		<h1><b>Weather Report</b></h1>
+  		</div>      
+	</div>
+	<div class="container-fluid" id="history">
 		
-			<button id="submitCity" onclick="fetchData()">GO</button><br><br>
-			<div id="weatherCard">
-				<p id="returnTemp"></p>
-				<p id="returnCity"></p>
+	</div>
+	<div class="container center">		
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<div class="input-group">
+				<input id="city" type="text" onfocus="this.value=''" data-toggle="tooltip" class="form-control" title="City Name" onkeydown="triggerButton(event)" name="city" placeholder="City">
+				<span class="input-group-btn">
+					<button id="submitCity" class="btn btn-primary" onclick="fetchData()">Go</button>
+				</span>
 			</div>
+			
 		</div>
+		<div class="col-sm-4"></div>
+		<div id="weatherCard">
+			<p id="returnTemp"></p>
+			<p id="returnCity"></p>
+		</div>
+	</div>
+
 	</body>
 </html>

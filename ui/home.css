@@ -1,34 +1,22 @@
-body {
-	background-image: url("/moonlightSnow.jpg");
-
-	/*for stretcing(covering) the image*/
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.jumbotron{
+	text-align: center;
+	background-color: #2255a5 !important;
+	color: white !important;
+	font-family: 'Amatic SC', cursive;
 }
 .center {
-
-	margin-top: 3.125em;
+	margin-top: 5vh;
 	text-align: center;
-}
-input[type=text] {
-	height: 1.875em;
-
-	background :rgba(255,255,255,0.6);	/*1st three values are of rgb (0-255), the 4th is of opacity*/
-	border: none;
-	border-bottom: 0.125em solid black;
 }
 #weatherCard {
 	display:none;	/*I'm hiding this div until user enters city name*/
 
 	background: rgba(255,255,255,0.4);	/*making the background translucent*/
-	margin-top: 12.5em;
+	margin-top: 5vh;
 	margin-left: auto;
 	margin-right: auto;
-	height :31.25em;
-	width: 31.25em;
-	border :0.0625em solid black;
+	height :50vh;
+	width: 50vh;
 }
 #returnCity {
 	font-size: 20px;
@@ -37,5 +25,37 @@ input[type=text] {
 #returnTemp {
 	margin-top: 200px;
 	margin-bottom: 0;
+	transition: 1s;
 	font-size: 70px;
+}
+#returnTemp:hover {
+	transition: 0.8s;
+	color: white;
+	font-size: 90px;
+	background-color: #2255a5;
+	border-radius: 10px;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    margin-left: 10px;
+}
+
+.closebtn {
+    padding-left: 10px;
+    color: #888;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: #000;
 }
